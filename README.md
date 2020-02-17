@@ -68,14 +68,14 @@ Decreasing `match_score` and increasing the `gap_cost` will reduce the number of
 ```python
 start_position, aligned = smithwaterman('Den uheldige politimand fanger aldrig sin lykkes smed',
                                          'Den uheldige postmand finder aldrig sin lykkes smed',
-                                      match_score=1, gap_cost=4)
+                                      match_score=1, gap_cost=5)
 [''.join(string) for string in aligned]
 ```
 
 
 
 
-    ['DEN UHELDIGE PO', ' ALDRIG SIN LYKKES SMED']
+    ['DEN UHELDIGE PO', 'LDRIG SIN LYKKES SMED']
 
 
 
